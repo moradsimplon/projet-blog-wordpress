@@ -85,9 +85,12 @@
 		<!---//End-header---->
     <div class="content">
       <div class="wrap">
-      <div class="single-page">
-              <div class="single-page-artical">
-                <div class="artical-content">
+
+			
+      <div class="single-page ">
+
+              <div class="single-page-artical ">
+                <div class="artical-content  ">
                   <img src="../img/img4.jpg" title="banner1">
                   <h3><a href="#">L’Araignée Rouge : 1er défi interactif au cinéma</a></h3>
                   <p>Le nom de ce smartphone n’est pas juste impossible à prononcer, c’est aussi le nom d’un produit qui ose enfin vraiment innover. Il ne s’agit pas simplement d’enlever un port jack mais carrément de remettre en cause des éléments comme le haut-parleur pour l’oreille (ça a un nom plus sexy ce truc ?), le capteur de proximité ou encore l’emplacement de la caméra frontale. Mais le plus flagrant sur ce smartphone c’est bien sûr son écran presque sans bords qui occupe 91,3 % de la face avant du smartphone (ratio écran-chassis).</p> <p class="para1">Le haut parleur pour les communications est donc remplacé par un système piézoélectrique : les vibrations du son se propagent dans châssis en céramique et il suffit de coller l’oreille n’importe où sur l’écran pour entendre. Le capteur de proximité, quant à lui, est remplacé par une solution utilisant les ultrasons.
@@ -177,9 +180,9 @@
      </div>
              <!---//End-comments-section--->
            </div>
-           <div class="single-page">
-                   <div class="single-page-artical">
-                     <div class="artical-content">
+           <div class="single-page ">
+                   <div class="single-page-artical  ">
+                     <div class="artical-content ">
                        <img src="../img/img5.jpg" title="banner1">
                        <h3><a href="#">Netflix adore le DIY et vous propose une chaussette connectée</a></h3>
                        <p>On a beaucoup parlé des livraisons par drone d’Amazon notamment mais aussi des tests de DHL. Désormais, et plus proche de chez nous, la société Flash Biologistic est en train de tester la livraison de médicaments à des hôpitaux. Le test s’effectue au CHU de Bordeaux à partir de cet été.</p> <p class="para1">La livraison par drone prend en effet tout son sens lors d’urgences médicales parce qu’à part l’hélicoptère qui reste contraignant et surtout très cher, les autres moyens de transports sont extrêmement lents.<br>
@@ -293,6 +296,21 @@ Flash Biologistic s’est associée avec le consortium de transport autonome d�
    <!----wookmark-scripts---->
      <script src="js/jquery.imagesloaded.js"></script>
      <script src="js/jquery.wookmark.js"></script>
+
+		 <script>
+		 var d = new Date();
+		 document.getElementById("Date").innerHTML = d.toDateString();
+		 </script>
+		 <script type="text/javascript">
+		   var seconde=0;
+		   function chrono()
+		   {
+		     document.getElementById("mychrono").innerHTML=seconde+" "+"sec";
+		     seconde++;
+		   }
+		   setInterval(chrono, 1000);
+		 </script>
+
      <script type="text/javascript">
        (function ($){
          var $tiles = $('#tiles'),
@@ -348,9 +366,7 @@ Flash Biologistic s’est associée avec le consortium de transport autonome d�
      </script>
    <!----//wookmark-scripts---->
    <!----//wookmark-scripts---->
-   <!----debut-footer--->
- <p>Design by <a href="http://akhbar.tech.com/">akhbar.tech</a></p>
-   <!----//fin-footer--->
+
    <!---//fin-wrap---->
  <!-- Add your site or application content here -->
 

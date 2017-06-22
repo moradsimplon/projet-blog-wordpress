@@ -193,6 +193,8 @@ a.boxclose{
 
 }
 /*--//userinfo--*/
+/*--//table-interactif--*/
+
 /*----start-post-grids----*/
 .post-share span{
 	background:url(../img/facebook.png) no-repeat 0px 0px;
@@ -279,10 +281,12 @@ footer{
 	bottom:10px;
 	right:15px;
 	width: 13%;
+
 }
 #mychrono,#Date{
 	color:#B9CB41;
 	font-weight: bold;
+	text-align: center;
 }
 footer li{
 

@@ -346,11 +346,20 @@ Flash Biologistic s’est associée avec le consortium de transport autonome d�
          $window.bind('scroll.wookmark', onScroll);
        })(jQuery);
      </script>
-   <!----//wookmark-scripts---->
-   <!----//wookmark-scripts---->
-   <!----debut-footer--->
- <p>Design by <a href="http://akhbar.tech.com/">akhbar.tech</a></p>
-   <!----//fin-footer--->
+		 <script>
+		 var d = new Date();
+		 document.getElementById("Date").innerHTML = d.toDateString();
+		 </script>
+		 <script type="text/javascript">
+		   var seconde=0;
+		   function chrono()
+		   {
+		     document.getElementById("mychrono").innerHTML=seconde+" "+"sec";
+		     seconde++;
+		   }
+		   setInterval(chrono, 1000);
+		 </script>
+
    <!---//fin-wrap---->
  <!-- Add your site or application content here -->
 
