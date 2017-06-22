@@ -18,32 +18,6 @@
         <!-- Front  -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         <!--  Front  -->
-        <!---start-click-drop-down-menu----->
-    		<script src="js/jquery.min.js"></script>
-            <!----start-dropdown--->
-             <script type="text/javascript">
-    			var $ = jQuery.noConflict();
-    				$(function() {
-    					$('#activator').click(function(){
-    						$('#box').animate({'top':'0px'},500);
-    					});
-    					$('#boxclose').click(function(){
-    					$('#box').animate({'top':'-700px'},500);
-    					});
-    				});
-    				$(document).ready(function(){
-    				//Hide (Collapse) the toggle containers on load
-    				$(".toggle_container").hide();
-    				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-    				$(".trigger").click(function(){
-    					$(this).toggleClass("active").next().slideToggle("slow");
-    						return false; //Prevent the browser jump to the link anchor
-    				});
-
-    			});
-    		</script>
-            <!----//End-dropdown--->
-    		<!---//End-click-drop-down-menu----->
     </head>
     <body>
       <!---debut-wrap---->
@@ -229,8 +203,55 @@
                       </main>
                   </div>
                 </div>
+                <footer>
+                  <nav>
+                    <ul>
+
+
+                    <li><a href="index.html"><span>Acceuil</span></a></li>
+                    <li><a href="pages/actualites.html"><span>Actualités</span></a></li>
+                    <li><a href="pages/apps.html"><span>Apps</span></a></li>
+                    <li><a href="pages/innovation.html"><span>Innovation</span></a></li>
+                    <li><a href="pages/tutoriel.html"><span>Tutoriel</span></a></li>
+                    <li><a href="pages/contact.html"><span>Contact</span></a></li>
+                  </ul>
+                  </nav>
+                  <p id="mychrono"></p>
+                  <p id="Date"></p>
+                </footer>
                 <!---//End-content---->
                 <!----wookmark-scripts---->
+                <!---start-click-drop-down-menu----->
+                <script src="js/jquery.min.js"></script>
+                <!----start-dropdown--->
+<script type="text/javascript">
+
+</script>
+
+    
+                <script type="text/javascript">
+                var $ = jQuery.noConflict();
+                $(function() {
+                  $('#activator').click(function(){
+                    $('#box').animate({'top':'0px'},500);
+                  });
+                  $('#boxclose').click(function(){
+                    $('#box').animate({'top':'-700px'},500);
+                  });
+                });
+                $(document).ready(function(){
+                  //Hide (Collapse) the toggle containers on load
+                  $(".toggle_container").hide();
+                  //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+                  $(".trigger").click(function(){
+                    $(this).toggleClass("active").next().slideToggle("slow");
+                    return false; //Prevent the browser jump to the link anchor
+                  });
+
+                });
+                </script>
+                <!----//End-dropdown--->
+                <!---//End-click-drop-down-menu----->
                   <script src="js/jquery.imagesloaded.js"></script>
                   <script src="js/jquery.wookmark.js"></script>
                   <script type="text/javascript">
@@ -273,7 +294,7 @@
                           // Get the first then items from the grid, clone them, and add them to the bottom of the grid
                           var $items = $('li', $tiles),
                               $firstTen = $items.slice(0, 10);
-                          $tiles.append($firstTen.clone());
+                          // $tiles.append($firstTen.clone());
 
                           applyLayout();
                         }
@@ -288,9 +309,7 @@
                   </script>
                 <!----//wookmark-scripts---->
                 <!----//wookmark-scripts---->
-                <!----debut-footer--->
-              <p>Design by <a href="http://akhbar.tech.com/">akhbar.tech</a></p>
-                <!----//fin-footer--->
+
                 <!---//fin-wrap---->
         <!-- Add your site or application content here -->
 

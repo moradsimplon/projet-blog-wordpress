@@ -271,23 +271,32 @@ a.boxclose{
 }
 
 /*--footer--*/
-.footer{
+
+footer{
+	background-color: white;
+	display: flex;
 	position:fixed;
 	bottom:10px;
 	right:15px;
+	width: 13%;
 }
-.footer p{
+#mychrono,#Date{
+	color:#B9CB41;
+	font-weight: bold;
+}
+footer li{
+
 	color:#8C8C8C;
 	font-size:0.9em;
 }
-.footer p a{
+footer li  a{
 	color:#B9CB41;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 }
-.footer p a:hover{
+footer li a:hover{
 	color:#8C8C8C;
 }
 /*----start-additionnal-page----*/
